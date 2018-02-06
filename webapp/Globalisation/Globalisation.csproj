@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37795DC6-45C9-458C-A3A5-48DA6534C35C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>K9.Globalisation</RootNamespace>
+    <AssemblyName>K9.Globalisation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dictionary.fr.Designer.cs">
+      <DependentUpon>Dictionary.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Dictionary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dictionary.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dictionary.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dictionary.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dictionary.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Articles\en-gb\coreearth-health.htm" />
+    <Content Include="Articles\en-gb\coreearth-trigram.htm" />
+    <Content Include="Articles\en-gb\fire-health.htm" />
+    <Content Include="Articles\en-gb\fire-description.htm" />
+    <Content Include="Articles\en-gb\heaven-health.htm" />
+    <Content Include="Articles\en-gb\heaven-description.htm" />
+    <Content Include="Articles\en-gb\lake-health.htm" />
+    <Content Include="Articles\en-gb\lake-description.htm" />
+    <Content Include="Articles\en-gb\mountain-health.htm" />
+    <Content Include="Articles\en-gb\mountain-description.htm" />
+    <Content Include="Articles\en-gb\soil-health.htm" />
+    <Content Include="Articles\en-gb\soil-description.htm" />
+    <Content Include="Articles\en-gb\soil-personal-development.htm" />
+    <Content Include="Articles\en-gb\soil-occupations.htm" />
+    <Content Include="Articles\en-gb\soil-trigram.htm" />
+    <Content Include="Articles\en-gb\thunder-health.htm" />
+    <Content Include="Articles\en-gb\thunder-description.htm" />
+    <Content Include="Articles\en-gb\thunder-occupations.htm" />
+    <Content Include="Articles\en-gb\thunder-personal-development.htm" />
+    <Content Include="Articles\en-gb\thunder-trigram.htm" />
+    <Content Include="Articles\en-gb\water-health.htm" />
+    <Content Include="Articles\en-gb\water-description.htm" />
+    <Content Include="Articles\en-gb\coreearth-description.htm" />
+    <Content Include="Articles\en-gb\water-personal-development.htm" />
+    <Content Include="Articles\en-gb\water-occupations.htm" />
+    <Content Include="Articles\en-gb\wind-health.htm" />
+    <Content Include="Articles\en-gb\wind-description.htm" />
+    <Content Include="Articles\en-gb\wind-trigram.htm" />
+    <Content Include="Articles\en-gb\heaven-trigram.htm" />
+    <Content Include="Articles\en-gb\lake-trigram.htm" />
+    <Content Include="Articles\en-gb\mountain-trigram.htm" />
+    <Content Include="Articles\en-gb\fire-trigram.htm" />
+    <Content Include="Articles\en-gb\water-trigram.htm" />
+    <Content Include="Articles\fr\coreearth-description.htm" />
+    <Content Include="Articles\fr\coreearth-health.htm" />
+    <Content Include="Articles\fr\coreearth-trigram.htm" />
+    <Content Include="Articles\fr\fire-description.htm" />
+    <Content Include="Articles\fr\fire-health.htm" />
+    <Content Include="Articles\fr\fire-trigram.htm" />
+    <Content Include="Articles\fr\heaven-description.htm" />
+    <Content Include="Articles\fr\heaven-health.htm" />
+    <Content Include="Articles\fr\heaven-trigram.htm" />
+    <Content Include="Articles\fr\lake-description.htm" />
+    <Content Include="Articles\fr\lake-health.htm" />
+    <Content Include="Articles\fr\lake-trigram.htm" />
+    <Content Include="Articles\fr\mountain-description.htm" />
+    <Content Include="Articles\fr\mountain-health.htm" />
+    <Content Include="Articles\fr\mountain-trigram.htm" />
+    <Content Include="Articles\fr\soil-description.htm" />
+    <Content Include="Articles\fr\soil-health.htm" />
+    <Content Include="Articles\fr\soil-occupations.htm" />
+    <Content Include="Articles\fr\soil-personal-development.htm" />
+    <Content Include="Articles\fr\soil-trigram.htm" />
+    <Content Include="Articles\fr\thunder-description.htm" />
+    <Content Include="Articles\fr\thunder-health.htm" />
+    <Content Include="Articles\fr\thunder-occupations.htm" />
+    <Content Include="Articles\fr\thunder-personal-development.htm" />
+    <Content Include="Articles\fr\thunder-trigram.htm" />
+    <Content Include="Articles\fr\water-description.htm" />
+    <Content Include="Articles\fr\water-health.htm" />
+    <Content Include="Articles\fr\water-occupations.htm" />
+    <Content Include="Articles\fr\water-personal-development.htm" />
+    <Content Include="Articles\fr\water-trigram.htm" />
+    <Content Include="Articles\fr\wind-description.htm" />
+    <Content Include="Articles\fr\wind-health.htm" />
+    <Content Include="Articles\fr\wind-trigram.htm" />
+    <Content Include="Templates\en-gb\DonationReceivedEmail.htm" />
+    <Content Include="Templates\en-gb\PasswordResetEmail.htm" />
+    <Content Include="Templates\en-gb\SupportQuery.htm" />
+    <Content Include="Templates\en-gb\WelcomeEmail.htm" />
+    <Content Include="Templates\fr\DonationReceivedEmail.htm" />
+    <Content Include="Templates\fr\PasswordResetEmail.htm" />
+    <Content Include="Templates\fr\SupportQuery.htm" />
+    <Content Include="Templates\fr\WelcomeEmail.htm" />
+    <Content Include="Text\en-gb\nine-star-ki-title.txt" />
+    <Content Include="Text\en-gb\Keywords.txt" />
+    <Content Include="Text\fr\Keywords.txt" />
+    <Content Include="Text\fr\nine-star-ki-title.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

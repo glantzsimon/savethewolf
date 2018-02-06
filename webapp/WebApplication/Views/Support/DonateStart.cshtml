@@ -1,0 +1,26 @@
+﻿@model K9.WebApplication.Models.StripeModel
+@{
+    ViewBag.Title = K9.Globalisation.Dictionary.Donate;
+    ViewBag.SubTitle = K9.Globalisation.Dictionary.MakeDonation;
+    ViewBag.BackgroundClass = "background-poaching1";
+    Layout = "../Shared/_LayoutFormSmall.cshtml";
+}
+
+@using (Html.BeginForm("Donate", "Support", FormMethod.Post))
+{
+    using (Html.BeginBootstrapForm())
+    {
+        <p>
+            Making a donation to Save The Wolf will help to buy life-saving herbal and orthomolecular medicines, as well as integrative and holistic therapies.
+            It will also help towards the cost of living.
+        </p>
+        <p>
+            As Dan is not a permanent resident or citizen of the UK, <strong>he is not entitled to any benefits or disability allowance</strong>. He has been struggling to work to be able to provide for himself, but his ailing health is making this increasingly difficult, not to say impossible.
+        </p>
+        <hr />
+
+        @Html.BootstrapEditorFor(model => model.DonationAmount)
+        <hr />
+        @Html.BootstrapButton(Dictionary.Next, EButtonType.Submit, "fa-chevron-right", EButtonClass.IconRight)
+    }
+}

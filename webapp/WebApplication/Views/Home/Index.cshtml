@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = Dictionary.Home;
+    ViewBag.Jarallax = "jarallax";
+    Layout = "../Shared/_LayoutForm.cshtml";
+}
+
+<div class="container margin-0 padding-0 width-100">
+    <div class="col-md-4 col-sm-4 margin-bottom-30">
+        <img class="auto-size" src="~/Images/wolfy/wolfy-photo-circle.png" />
+    </div>
+    <div class="col-md-8 col-sm-8 padding-0 padding-left-20-desktop">
+        <p>
+            Our brave, beloved Wolf aka Pisit Domprasong or Dan has been struggling with his health for over 8 years and has been remarkably
+            resilient and courageous, despite feeling really rather rotten at times.
+        </p>
+        <br />
+        <p>
+            The time has come for him to reach out and ask for your help. Lately, his health has been declining; he has lost over 15kg in a couple of months and has been getting weaker and increasingly weary and confused.
+            The doctors are being great and are doing everything they can to try to help, but Dan is already on the right medication to treat his condition and what they can do in addition to that is limited.
+        </p>
+        <br />
+        <p>
+            We are asking anyone who feels they are able to support Dan
+            to consider making a donation that will contribute towards herbal and orthomolecular medicines, as well as other integrative and holistic therapies.
+        </p>
+        <br />
+        <p>
+            Donations will also help with Dan's living costs. Sadly, given that Dan is neither a citizen nor a permanent resident of the UK, he is not entitled to any benefits or disability allowance.
+            Dan is still working full time and struggling tremendously to drag himself out of bed every day. It is a crime that somebody who is so weak should have to work when they should be at home resting and recuperating.
+        </p>
+        <br />
+        <p>
+            Any help you could give would be hugely appreciated. This will make a tremendous difference
+            to his wellbeing and will increase his chances of overcoming his illness and recovering his health. 
+            I'm sure you will agree that Dan is one of the kindest people you could have the pleasure of meeting. Let's return some of that kindness to him in his time of need.
+        </p>
+        <p>
+            Thank you.
+        </p>
+        <br />
+        <div class="center-block">
+            @Html.BootstrapActionLinkButton("Donate Now", "DonateStart", "Support", null, "fas fa-paw")
+        </div>
+    </div>
+</div>

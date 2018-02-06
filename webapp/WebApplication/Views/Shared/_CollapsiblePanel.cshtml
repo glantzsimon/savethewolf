@@ -1,0 +1,20 @@
+﻿@model K9.WebApplication.Options.CollapsiblePanelOptions
+@{
+    var id = Guid.NewGuid();
+}
+<div class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="collapsible-panel-link" data-toggle="collapse" href="#@id">@Model.Title <i class="fa @Model.CaretCssClass"></i></a>
+            </h4>
+        </div>
+        <div id="@id" class="panel-collapse collapse @Model.ExpadedCssClass">
+            <div class="panel-body">@MvcHtmlString.Create(Model.Body)</div>
+            @if (!string.IsNullOrEmpty(Model.Footer))
+            {
+                <div class="panel-footer">@MvcHtmlString.Create(Model.Footer)</div>
+            }
+        </div>
+    </div>
+</div>
