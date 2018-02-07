@@ -5,4 +5,4 @@
     ViewBag.BackgroundClass = "background-poaching1";
     Layout = "../Shared/_LayoutForm.cshtml";
 }
-@Html.Success(K9.Globalisation.Dictionary.DonationSuccessful + " <i class='fa fa-smile-o'></i>")
+@Html.Success(K9.Globalisation.Dictionary.DonationSuccessful + " <i class='fa fa-smile-o'></i>", MvcHtmlString.Create(@"<hr /> <div class=""alert alert-info"" ><h3><i class=""fa fa-medkit"" ></i> &nbsp;<strong>Free Nutritional Consultation</strong></h3><p style=""margin -top: 20px;"" > Making a donation to Save The Wolf entitles you to a free nutritional consultation, should you be interested.</p><p style=""margin -top: 20px;"" ><a class=""ignore-anchor"" href=""mailto:simon@vibranthealthnow.co.uk?subject=Free Nutritional Consultation&body=Hello, I would like a nutritional consultation."" > Yes, I would like a nutritional consultation.</a></p></div>"))

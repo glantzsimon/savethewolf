@@ -14,7 +14,7 @@
     {
         @Html.BootstrapDisplayFor(model => model.AmountToDonate)
         @Html.HiddenFor(model => model.DonationAmount)
-        <hr/>
+        <hr />
 
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="@Model.PublishableKey"
@@ -28,7 +28,19 @@
                 data-currency="@Model.LocalisedCurrencyThreeLetters">
         </script>
 
-        <hr/>
+        <hr />
         @Html.BootstrapActionLinkButton(K9.Globalisation.Dictionary.ChangeAmount, "DonateStart", "Support", null, "fa-chevron-left")
     }
+    <div class="alert alert-success">
+        <h3><i class="fa fa-lock"></i> &nbsp;<strong>Security</strong></h3>
+        <p style="margin-top: 20px;">
+            This website is powered by <a href="https://stripe.com/gb/payments" target="_blank"><strong>Stripe</strong></a>. Your credit or debit card data is
+            <strong>never sent to our servers</strong>; it is sent directly to Stripe. 
+            We <strong>do not handly any sensitive data whatsoever</strong>, which makes any transactions through this website 
+            <strong>PCI compliant</strong>. Stripe automatically stores your cards in its vault, as does PayPal.
+        </p>
+        <p style="margin-top: 20px;">
+            This website is also <strong>encrypted using <a target="_blank" href="https://www.globalsign.com/en/ssl-information-center/what-is-ssl">SSL</a></strong>, which is the same technology used by Internet banking.
+        </p>
+    </div>
 }
