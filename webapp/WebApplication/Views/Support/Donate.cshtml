@@ -12,21 +12,21 @@
 {
     using (Html.BeginBootstrapForm())
     {
-        @Html.BootstrapDisplayFor(model => model.AmountToDonate)
         @Html.HiddenFor(model => model.DonationAmount)
-        <hr />
-
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="@Model.PublishableKey"
-                data-amount="@Model.DonationAmountInCents"
-                data-name="@WebsiteConfiguration.Instance.CompanyName"
-                data-description="@K9.Globalisation.Dictionary.DonationTo @WebsiteConfiguration.Instance.CompanyName"
-                data-billing-address="true"
-                data-image="@Url.AbsoluteContent("Images/company/logo-small.png")"
-                data-locale="@Model.Locale"
-                data-zip-code="false"
-                data-currency="@Model.LocalisedCurrencyThreeLetters">
-        </script>
+        <div class="text-right">
+            <div class="margin-top-minus-5 float-left text-left">@Html.BootstrapDisplayFor(model => model.AmountToDonate)</div>
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="@Model.PublishableKey"
+                    data-amount="@Model.DonationAmountInCents"
+                    data-name="@WebsiteConfiguration.Instance.CompanyName"
+                    data-description="@K9.Globalisation.Dictionary.DonationTo @WebsiteConfiguration.Instance.CompanyName"
+                    data-billing-address="true"
+                    data-image="@Url.AbsoluteContent("Images/company/logo-small.png")"
+                    data-locale="@Model.Locale"
+                    data-zip-code="false"
+                    data-currency="@Model.LocalisedCurrencyThreeLetters">
+            </script>
+        </div>
 
         <hr />
         @Html.BootstrapActionLinkButton(K9.Globalisation.Dictionary.ChangeAmount, "DonateStart", "Support", null, "fa-chevron-left")

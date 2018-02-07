@@ -59,6 +59,10 @@
     margin-top: 15px;
 }
 
+.margin-top-minus-5 {
+    margin-top: -5px;
+}
+
 .margin-top-minus-15 {
     margin-top: -15px;
 }
@@ -197,4 +201,8 @@
 
 .clear-both {
     clear: both;
+}
+
+.float-left {
+    float: left;
 }
