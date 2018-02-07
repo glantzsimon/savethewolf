@@ -5,8 +5,10 @@
     @Html.Partial("_Navbar")
     <div class="mainContent">
         <div class="device-only width-100">
-            <div class="large-title">@K9.Globalisation.Dictionary.SaveTheWolf &#128062;</div>
-            <img class="center-block" src="~/Images/home/wolf-logo-home-small.png" />
+            <a href="@Url.Action("Index", "home")">
+                <div class="large-title">@K9.Globalisation.Dictionary.SaveTheWolf &#128062;</div>
+                <img class="center-block" src="~/Images/home/wolf-logo-home-small.png" />
+            </a>
         </div>
         <div class="container-fluid">
             @RenderSection("formLayout")
