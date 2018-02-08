@@ -270,6 +270,7 @@
     <Content Include="Content\site\desktop.css" />
     <Content Include="Content\site\elements.css" />
     <Content Include="Content\site\mobile.css" />
+    <Content Include="Content\site\sections\donate.css" />
     <Content Include="Content\site\sections\wolf.css" />
     <Content Include="Content\site\sections\shop.css" />
     <Content Include="Content\site\sections\archive.css" />
@@ -576,6 +577,7 @@
     <Content Include="Images\icons\favicon.ico" />
     <Content Include="Images\icons\safari-pinned-tab.svg" />
     <Content Include="Images\shared\loading.gif" />
+    <Content Include="Images\shared\powered-by-stripe.png" />
     <Content Include="Images\template\1.jpg" />
     <Content Include="Images\template\2.jpg" />
     <Content Include="Images\template\3.jpg" />
